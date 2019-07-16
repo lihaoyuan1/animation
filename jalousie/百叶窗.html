@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>百叶窗</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{
+				background-image: url(img1/triangles.png);
+			}
+			ul{
+				width: 800px;
+				height: 320px;
+				margin: 100px auto;
+				list-style: none;
+			}
+			ul li{
+				width: 160px;
+				height: 320px;
+				float: left;
+				overflow: hidden;
+				position: relative;
+				transition: all 0.3s linear;
+			}
+			ul:hover li{
+				width: 40px;
+			}
+			ul li:hover{
+				width: 640px;
+			}
+			ul li a{
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 30px;
+				line-height: 30px;
+				color: #FFFFFF;
+				background: #000000;
+				opacity: 0.5;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><img src="img1/img1(1).jpg" /><a>功夫熊猫</a></li>
+			<li><img src="img1/img2.jpg" /><a>玩具总动员<a></a></li>
+			<li><img src="img1/img3.jpg"><a>wall-E</a></li>
+			<li><img src="img1/img4.jpg"><a>UP</a></li>
+			<li><img src="img1/img5.jpg"><a>汽车总动员</a></li>
+		</ul>
+	</body>
+</html>

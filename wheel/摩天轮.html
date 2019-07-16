@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>摩天轮</title>
+		<style type="text/css">
+			html, body{
+				position: relative;
+				width: 100%;
+				height: 960px;
+				margin: 0;
+				font-size: 0;
+			}
+			#ground{
+				width: 100%;
+				height: 100%;
+			}
+			.base{
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+			#bracket{
+				bottom: 0;
+			}
+			#big-title{
+				top: 232px;
+				z-index: 1;
+			}
+			#title{
+				top: 425px;
+				z-index: 1;
+			}
+			#arrow{
+				top: 505px;
+				z-index: 1;
+			}
+			#box{
+				width: 768px;
+				top: 0;
+				animation: play 10s linear infinite;
+			}
+			.people{
+				position: absolute;
+				transform-origin: 50% 0;
+				animation: play1 10s linear infinite;
+			}
+			#box #boy{
+				left: 326px;
+				top: 35px;
+			}
+			#box #dog{
+				left: 570px;
+				top: 150px;
+			}
+			#box #girl{
+				left: 655px;
+				top: 375px;
+			}
+			#box #girls{
+				left: 560px;
+				top: 630px;
+			}
+			#box #hairboy{
+				left: 326px;
+				top: 720px;
+			}
+			#box #mimi{
+				left: 100px;
+				top: 630px;
+			}
+			#box #mudog{
+				left: -15px;
+				top: 375px;
+			}
+			#box #shamegirl{
+				left: 80px;
+				top: 150px;
+			}
+			@keyframes play{
+				from{transform: rotate(0);}
+				to{transform: rotate(360deg);}
+			}
+			@keyframes play1{
+				from{transform: rotate(0);}
+				to{transform: rotate(-360deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<img id="ground" src="wheel/2.jpg" />
+		<img class="base" id="bracket" src="wheel/bracket.png">
+		<img class="base" id="bracket" src="wheel/bracketsmall.png" />
+		<img class="base" id="big-title" src="wheel/big-title.png" />
+		<img class="base" id="title" src="wheel/title.png" />
+		<img class="base" id="arrow" src="wheel/arrow.png" />
+		<div class="base" id="box">
+			<img id="fsw" src="wheel/fsw.png" />
+			<img class="people" id="boy" src="wheel/boy.png" />
+			<img class="people" id="dog" src="wheel/dog.png" />
+			<img class="people" id="girl" src="wheel/girl.png" />
+			<img class="people" id="girls" src="wheel/girls.png" />
+			<img class="people" id="hairboy" src="wheel/hairboy.png" />
+			<img class="people" id="mimi" src="wheel/mimi.png" />
+			<img class="people" id="mudog" src="wheel/mudog.png" />
+			<img class="people" id="shamegirl" src="wheel/shamegirl.png" />
+		</div>
+	</body>
+</html>
